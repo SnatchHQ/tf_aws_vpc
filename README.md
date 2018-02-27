@@ -1,3 +1,5 @@
+# THIS IS NOT THE ORIGINAL SOURCE. Find that at https://github.com/terraform-community-modules/tf_aws_vpc and observe the warnings there!
+
 vpc terraform module
 ===========
 
