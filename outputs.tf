@@ -7,7 +7,7 @@ output "database_subnets" {
 }
 
 output "database_subnet_group" {
-  value = "${aws_db_subnet_group.database.id}"
+  value = "${aws_db_subnet_group.database.*.id}"
 }
 
 output "public_subnets" {
@@ -19,7 +19,7 @@ output "elasticache_subnets" {
 }
 
 output "elasticache_subnet_group" {
-  value = "${aws_elasticache_subnet_group.elasticache.id}"
+  value = "${aws_elasticache_subnet_group.elasticache.*.id}"
 }
 
 output "vpc_id" {
@@ -55,7 +55,7 @@ output "natgw_ids" {
 }
 
 output "igw_id" {
-  value = "${aws_internet_gateway.mod.id}"
+  value = "${aws_internet_gateway.mod.*.id}"
 }
 
 output "default_network_acl_id" {
@@ -63,9 +63,9 @@ output "default_network_acl_id" {
 }
 
 output "vpc_endpoint_s3_id" {
-  value = "${aws_vpc_endpoint.s3.id}"
+  value = "${aws_vpc_endpoint.s3.*.id}"
 }
 
 output "vpc_endpoint_dynamodb_id" {
-  value = "${aws_vpc_endpoint.dynamodb.id}"
+  value = "${aws_vpc_endpoint.dynamodb.*.id}"
 }
